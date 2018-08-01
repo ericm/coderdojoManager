@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <nav>
+    <h1>CODERDOJO STUDENT MANAGER</h1>
+    <a routerLink="/dashboard" style="margin-right: 2em">DASHBOARD</a>
+    <a routerLink="/list">LIST</a>
+    <a routerLink="/manage">MANAGE</a>
+  </nav>
+  <div style="height: 100px;"></div>
+</div>
+<div id="container">
+  <router-outlet *ngIf="title; else login"></router-outlet>
+  <ng-template #login>Login</ng-template>
+</div>

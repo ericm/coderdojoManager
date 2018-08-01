@@ -1,0 +1,169 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Pragati+Narrow');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #171717;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.51);
+  padding: 10px;
+  display: table;
+  width: 100%;
+  position: fixed;
+}
+
+nav h1 {
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 1.4em;
+  color: #fff;
+  text-align:left;float:left;
+}
+nav a {
+  text-align:right;float:right;
+  padding-top: .3em;
+  margin-left: 1em;
+  color: #fff;
+  display: table-column;
+  font-family: 'Pragati Narrow', sans-serif;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #c3002f;
+}
+a {
+  text-decoration: none;
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  color: #eeeeee;
+}
+h2 {
+  color: #c3002f;
+  font-size: 2.5em;
+  font-family: 'Pragati Narrow', sans-serif;
+  margin-left: 2em;
+}
+#container {
+  position: relative;
+  left: 10%;
+  width: 80%;
+}
+h3 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  color: #eeeeee;
+  background-color: #080808;
+  border-radius: 1em;
+}
+#calendar {
+  background-color: #0b0b0b;
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin-left: 10%;
+  border-radius: 1em;
+  margin-top: 30px;
+}
+.weekdays {
+  padding: 10px 0;
+  margin: 0 0 0 4%;
+}
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+
+}
+.weekdays li span {
+  color: #fff;
+}
+.month {
+  padding: 30px 25px;
+  text-align: center;
+  width: auto;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.activeDay {
+  color: #c3002f !important;
+}
+
+.days {
+  padding: 10px 0;
+
+  margin: 20px 0 0 4%;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9em;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+ul {list-style-type: none;}
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+}
+
+.prev, .next {
+  cursor: pointer;
+}
+
+button {
+
+}
+
+@media screen and (max-width:820px) {
+  #calendar {
+    height: 400px;
+  }
+}
+@media screen and (max-width:520px) {
+  #calendar {
+    height: 450px;
+  }
+}

@@ -1,0 +1,35 @@
+<h2>
+  DASHBOARD
+</h2>
+
+<div id="calendar">
+  <h3>CALENDAR</h3>
+  <div class="month">
+    <ul>
+      <li (click)="goLast()" class="prev">&#10094;</li>
+      <li (click)="goNext()" class="next">&#10095;</li>
+      <li>Week of {{startDate}} - {{endDate}}<br><span style="font-size:23px">{{weekTemplate}}</span></li>
+    </ul>
+  </div>
+
+  <ul class="weekdays">
+    <li>Su</li>
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li class="activeDay">Sa</li>
+
+  </ul>
+  <ul class="days">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li class="activeDay">Classes from 12 to 3pm</li>
+  </ul>
+
+</div>
