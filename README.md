@@ -1,8 +1,8 @@
-# CODERDOJO STUDENT MANAGER
+# Coderdojo Student Management Web App
 
 - Angular 4 app
 
-- Currently using coouch db as backend
+- Currently using couch db as backend
 
 - Type 'npm install' to install dependencies
 
