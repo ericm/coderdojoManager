@@ -256,3 +256,12 @@ LEVEL 4. SETTINGS
   padding-bottom: 50px;
   border: var(--fieldBorderWidth, 2px) solid #c3002f;
 }
+
+@media screen and (max-width:790px) {
+  .a-field {
+    width: 100%;
+  }
+  .field input, .a-field .field__label {
+    font-size: .95em;
+  }
+}
