@@ -13,5 +13,9 @@
   li, span {
     font-size: .75em !important;
   }
+  #calendar {
+    width: 90% !important;
+    margin-left: 5%;
+  }
 
 }

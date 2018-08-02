@@ -9,12 +9,14 @@
   </nav>
   <script>var clicked = false;
   </script>
-  <img onclick="document.getElementById('drawer').classList.toggle('clicked')" id="menu" src="/assets/menu.png"/>
+  <img onclick="document.getElementById('drawer').classList.toggle('clicked'); document.getElementById('menuBack').classList.toggle('menuBackShow');" id="menu" src="/assets/menu.png"/>
+
+  <div onclick="document.getElementById('drawer').classList.toggle('clicked'); document.getElementById('menuBack').classList.toggle('menuBackShow');" id="menuBack"></div>
 
   <div id="drawer">
-    <a onclick="document.getElementById('drawer').classList.toggle('clicked')" routerLink="/dashboard">DASHBOARD</a>
-    <a onclick="document.getElementById('drawer').classList.toggle('clicked')" routerLink="/list">LIST</a>
-    <a onclick="document.getElementById('drawer').classList.toggle('clicked')" routerLink="/manage">MANAGE</a>
+    <a onclick="document.getElementById('drawer').classList.toggle('clicked'); document.getElementById('menuBack').classList.toggle('menuBackShow');" routerLink="/dashboard">DASHBOARD</a>
+    <a onclick="document.getElementById('drawer').classList.toggle('clicked'); document.getElementById('menuBack').classList.toggle('menuBackShow');" routerLink="/list">LIST</a>
+    <a onclick="document.getElementById('drawer').classList.toggle('clicked'); document.getElementById('menuBack').classList.toggle('menuBackShow');" routerLink="/manage">MANAGE</a>
   </div>
 
   <div style="height: 100px;"></div>
