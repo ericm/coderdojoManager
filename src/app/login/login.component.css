@@ -44,7 +44,7 @@ LEVEL 2. CORE STYLES
 }
 
 .field__input{
-  font-family: "Pragati Narrow";
+  font-family: 'Open Sans', sans-serif;
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -75,6 +75,7 @@ LEVEL 3. PRESENTATION STYLES
   box-sizing: border-box;
   font-size: var(--uiFieldFontSize);
   padding-top: 1em;
+  width: 330px;
 }
 
 .a-field .field__input{
@@ -120,16 +121,18 @@ LEVEL 3. PRESENTATION STYLES
   bottom: 0;
   left: 0;
 }
-
+.page__demo {
+  margin-bottom: 25px;
+}
 .a-field .field__label{
-  font-family: "Pragati Narrow";
+  font-family: 'Open Sans', sans-serif;
   color: #c3002f;
   position: absolute;
   left: var(--uiFieldPaddingLeft);
   bottom: calc(50% - .5em);
 
   line-height: 1;
-  font-size: var(--uiFieldHintFontSize);
+  font-size: 1.3em;
 
   pointer-events: none;
   transition: bottom .2s cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity .2s ease-out;
@@ -212,46 +215,44 @@ LEVEL 4. SETTINGS
 */
 
 .field{
-  --fieldBorderColor: #D1C4E9;
-  --fieldBorderColorActive: #673AB7;
+  --fieldBorderColor: #c3002f;
+  --fieldBorderColorActive: #ffffff;
 }
 .sub_button {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100) );
-  background:-moz-linear-gradient( center top, #fe1a00 5%, #ce0100 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100');
-  background-color:#fe1a00;
-  -webkit-border-top-left-radius:0px;
-  -moz-border-radius-topleft:0px;
-  border-top-left-radius:0px;
-  -webkit-border-top-right-radius:0px;
-  -moz-border-radius-topright:0px;
-  border-top-right-radius:0px;
-  -webkit-border-bottom-right-radius:0px;
-  -moz-border-radius-bottomright:0px;
-  border-bottom-right-radius:0px;
-  -webkit-border-bottom-left-radius:0px;
-  -moz-border-radius-bottomleft:0px;
-  border-bottom-left-radius:0px;
+  background-color: rgba(195, 0, 47, 0);
+  -webkit-border-radius: .3em;
+  -moz-border-radius: .3em;
+  border-radius: .3em;
+  border: var(--fieldBorderWidth, 2px) solid #c3002f;
   text-indent:0;
-  border:1px solid #d83526;
   display:inline-block;
-  color:#ffffff;
-  font-family:Arial;
+  color: #c3002f;
+  font-family: 'Open Sans', sans-serif;
   font-size:15px;
   font-weight:bold;
   font-style:normal;
-  height:40px;
-  line-height:40px;
+  height:30px;
+  line-height:30px;
   width:100px;
   text-decoration:none;
   text-align:center;
 }
 .sub_button:hover {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c3002f), color-stop(1, #c3002f) );
-  background:-moz-linear-gradient( center top,#c3002f 5%, #c3002f 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00');
-  background-color:#c3002f;
+  background-color: #c3002f;
+  color: #fff;
 }.sub_button:active {
    position:relative;
    top:1px;
  }
+
+.page {
+  -webkit-border-radius: .7em;
+  -moz-border-radius: .7em;
+  border-radius: .7em;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border: var(--fieldBorderWidth, 2px) solid #c3002f;
+}
