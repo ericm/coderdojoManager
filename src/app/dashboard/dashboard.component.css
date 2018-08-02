@@ -1,0 +1,17 @@
+@media screen and (max-width:960px) {
+  #calendar {
+    height: 400px;
+  }
+}
+@media screen and (max-width:520px) {
+  h2 {
+    font-size: 1.7em;
+  }
+  .days li  {
+    font-size: .65em !important;
+  }
+  li, span {
+    font-size: .75em !important;
+  }
+
+}

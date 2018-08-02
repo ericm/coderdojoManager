@@ -5,8 +5,20 @@
     <a routerLink="/dashboard" style="margin-right: 2em">DASHBOARD</a>
     <a routerLink="/list">LIST</a>
     <a routerLink="/manage">MANAGE</a>
+
   </nav>
+  <script>var clicked = false;
+  </script>
+  <img onclick="document.getElementById('drawer').classList.toggle('clicked')" id="menu" src="/assets/menu.png"/>
+
+  <div id="drawer">
+    <a routerLink="/dashboard">DASHBOARD</a>
+    <a routerLink="/list">LIST</a>
+    <a routerLink="/manage">MANAGE</a>
+  </div>
+
   <div style="height: 100px;"></div>
+
 </div>
 <div id="container">
   <router-outlet *ngIf="title; else login"></router-outlet>
