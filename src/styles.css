@@ -63,6 +63,14 @@ nav a:hover, #drawer a:hover {
   text-align: right;
   font-size: 1.5em;
 }
+/*placeholder fixed div*/
+#drawer b{
+  display: none;
+  right: 0;
+  position: fixed;
+  background-color: #c3002f;
+
+}
 .clicked {
   right: 0 !important;
 }
