@@ -8,6 +8,7 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { ListComponent } from './list/list.component';
 import { ManageComponent } from './manage/manage.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { ManageComponent } from './manage/manage.component';
     AppComponent,
     DashboardComponent,
     ListComponent,
-    ManageComponent
+    ManageComponent,
+    LoginComponent
   ],
   bootstrap: [ AppComponent ]
 })

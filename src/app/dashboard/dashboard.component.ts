@@ -1,42 +1,6 @@
 import {Component} from '@angular/core';
 import * as moment from 'moment';
 
-import * as Nano  from 'nano'
-/*
-let db = Nano('http://127.0.0.1:5984/calendar').db.;
-
-interface Entry extends Nano.MaybeDocument {
-  date: string,
-  entry: string
-}
-
-class Person implements Entry {
-  _id: string;
-  _rev: string;
-  date: string;
-  entry: string;
-
-  constructor(date: string, entry: string) {
-    this._id = undefined;
-    this._rev = undefined;
-    this.date = date;
-    this.entry = entry
-  }
-
-  processAPIResponse(response: Nano.DocumentInsertResponse) {
-    if (response.ok === true) {
-      this._id = response.id;
-      this._rev = response.rev
-    }
-  }
-}
-let enter = new Person('02/08/2018', 'meeting');
-db.use("calendar").insert(enter).then((response) => {
-  enter.processAPIResponse(response);
-  console.log(enter);
-});
-*/
-
 
 @Component({
   selector: 'app-dashboard',
